@@ -1,0 +1,412 @@
+body{
+    background:#171c26;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans',monospace;
+    letter-spacing: 0.02em;
+    
+}
+a{
+  text-decoration: none;
+}
+
+
+/* Seccion Barra-Navegación */
+
+#barra-nav{
+    height: 65px;   
+    top:0;
+    width: 100%;   
+    position: sticky; 
+    display: flex;
+    background-color:#171c26 ;    
+    z-index: 999; 
+}
+#div-nav{
+    margin-top: 1%;
+    margin-left: 4%;
+    position: absolute;
+    display: flex;
+}
+
+#img-logo{
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+/* Seccion-Main */
+
+#div-img-photo{
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    text-align: center;
+    bottom: 6%;
+    top:-17%
+    
+}
+
+#img-photo{
+    width: 300px;
+    height: 300px;    
+}
+#hr-p{
+    border:1px solid gray;
+    max-width: 50%;
+    margin: 5%;
+    padding-right: 55%;
+}
+
+#line-vertical{
+    border-left: 2px solid gray;
+        height: 100%;           
+        top: 10px;
+        margin-left: -3px;
+        
+        display: inline-block;
+        
+}
+#div-line-vertical{
+    
+    display: inline-block;
+    height: 100%;   
+}
+/* seccion botones */
+#my-buttons{
+    display:inline-block;
+    height: 70%;
+    position: absolute;
+    bottom: 36%; 
+    top: 10%;  
+    width: 40%;
+    right: 10%;   
+    text-align: center;
+}
+#hr-buttons{
+    position: relative;
+    border:1px solid gray;
+    max-width: 25%;
+    margin: 5%;
+    padding-right: 55%;
+    left: 30px;
+}
+#a-buttons{
+    position: relative; /*habilito cambio de posición*/
+    display: block;
+    margin:2% !important;
+    font-size: 25px;
+    width: 94%;           
+    padding:18px 1px ; 
+    border-radius: 22px;
+    text-transform: uppercase; 
+    left:2.5px; /*Muevo 8px a la izquierda*/           
+}
+.hcode-button-1 {
+    color: #ffffff !important;
+    background-color: transparent ;
+    border-color: #E1306C;
+    border: 2px solid  #E1306C ;
+  
+}
+.hcode-button-2 {
+    color: #ffffff !important;
+    background-color: transparent ;         
+    border-color: #ffffff ;
+    border:2px solid  #ffffff;
+}
+.hcode-button-3 {
+    color: #ffffff !important;
+    background-color: transparent;
+    border-color: #1e73be;
+    border:2px solid #1e73be;
+}
+.hcode-button-4 {
+    color: #ffffff !important;
+    background-color:transparent;
+    border-color: #FF0000;
+    border:2px solid #FF0000;
+}
+.hcode-button-5 {         
+    color: #ffffff !important;
+    background-color: transparent;
+    border-color: #ff551a ;
+    margin-bottom: 100px;
+    border: 2px solid #ff551a;
+}
+.hcode-button-6 {         
+  color: #ffffff !important;
+  background-color: transparent;
+  border-color: #1ed760 ;
+  margin-bottom: 100px;
+  border: 2px solid #1ed760;
+}
+
+#icon-i{
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .button-1{
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;      
+  }
+  .button-1:hover{
+    background: #E1306C;
+    box-shadow: 0 0 5px #E1306C,0 0 10px #E1306C,0 0 10px #E1306C;            
+  }
+  .button-2{
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;      
+  }
+  .button-2:hover{
+    background: gray;
+    box-shadow: 0 0 5px gray,0 0 20px gray,0 0 20px gray;            
+  }
+  .button-3{
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;      
+  }
+  .button-3:hover{
+    background:#1e73be;
+    box-shadow: 0 0 5px #1e73be,0 0 20px #1e73be,0 0 20px #1e73be;            
+  }
+  .button-4{
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;      
+  }
+  .button-4:hover{
+    background: #FF0000;
+    box-shadow: 0 0 5px #FF0000,0 0 10px #FF0000,0 0 10px #FF0000;            
+  }
+  .button-5{
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;      
+  }
+  .button-5:hover{
+    background: #ff551a;
+    box-shadow: 0 0 5px #ff551a,0 0 20px #ff551a,0 0 20px #ff551a;            
+  }
+
+  .button-6{
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;      
+  }
+  .button-6:hover{
+    background: #1ed760;
+    box-shadow: 0 0 5px #1ed760,0 0 20px #1ed760,0 0 20px #1ed760;            
+  }
+  
+  
+  /*Section-Responsive-@media  */
+  @media(max-width:1625px){
+    #div-img-photo{
+      display: inline-block;
+      position: relative;
+      width: 45%;
+      text-align: center;
+      bottom: 15%;   
+  }
+}
+  #div-line-vertical{
+    
+    display: inline-block;
+    height: 100%;  
+    position: relative;
+    top:-7%;
+}
+@media(max-width:1439px){
+  #div-img-photo{
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    text-align: center;
+    bottom: 15%; 
+    top:-12%;  
+}
+#div-line-vertical{
+  
+  display: inline-block;
+  height: 100%;  
+  position: relative;
+  top:-7%;
+}
+}
+ @media(max-width:1440px){
+  #div-img-photo{
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    text-align: center;
+    bottom: 1%;   
+}
+ }
+ @media(max-width:1280px){
+  #img-photo{
+    width: 250px;
+    height: 250px;    
+}
+
+ }
+ @media(max-width:1060px){
+  #img-photo{
+    width: 200px;
+    height: 200px;    
+}
+ }
+ @media(max-width:930px){
+  
+  #div-img-photo{
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    left: 21%;
+    text-align: center;
+    bottom: 6%;   
+    margin:0;      
+}
+
+#photo-p{
+  margin-right: 0;
+  margin-left: 0;
+  display: inline;
+  
+}
+#img-photo{
+  position: relative;
+  right: 17%;
+}
+
+#line-vertical{
+  border-left: 2px solid gray;
+      height: 100%;           
+      top: 10px;
+      margin-left: -3px;      
+      display: inline-block;     
+}
+#div-line-vertical{
+  position: relative;
+  display: inline-block;
+  height: 60%;
+  top:30%;
+  left: -9%;
+  transform: rotate(90deg);   
+}
+#my-buttons{
+  display:inline-block;
+  height: 100%;
+  position: relative;
+  bottom: 36%; 
+  top: 8%;  
+  width: 90%;
+  left:5.6%;   
+  text-align: center;
+ 
+}
+
+ }
+
+ @media(max-width:662px){
+  #line-vertical{
+    border-left: 2px solid gray;
+        height: 80%;           
+        top: 10px;
+        margin-left: -3px;      
+        display: inline-block;     
+  }
+  #div-line-vertical{
+    position: relative;
+    display: inline-block;
+    height: 60%;
+    top:15%;
+    left: -17%;
+    transform: rotate(90deg);   
+  }
+  #my-buttons{
+    display:inline-block;
+    height: 70%;
+    position: relative;
+    bottom: 36%; 
+    top: -8%;  
+    width: 90%;
+    left:5.6%;   
+    text-align: center;
+  }
+
+ }
+ @media(max-width:496px){
+  #img-photo{
+    width: 150px;
+    height: 150px;    
+}
+#line-vertical{
+  border-left: 2px solid gray;
+      height: 80%;           
+      top: 10px;
+      margin-left: -3px;      
+      display: inline-block;     
+}
+#div-line-vertical{
+  position: relative;
+  display: inline-block;
+  height: 40%;
+  top:10%;
+  left: -16.5%;
+  transform: rotate(90deg);   
+}
+#hr-buttons{
+  position: relative;
+  border:1px solid gray;
+  max-width: 25%;
+  margin: 5%;
+  padding-right: 50%;
+  left: 30px;
+}
+
+
+ }
+ @media(max-width:350px){
+  #img-photo{
+    width: 100px;
+    height: 100px;    
+}
+#hr-buttons{
+  position: relative;
+  border:1px solid gray;
+  max-width: 25%;
+  margin: 5%;
+  padding-right: 45%;
+  left: 30px;
+}
+#line-vertical{
+  border-left: 2px solid gray;
+      height: 80%;           
+      top: 10px;
+      margin-left: -3px;      
+      display: inline-block;     
+}
+#div-line-vertical{
+  position: relative;
+  display: inline-block;
+  height: 30%;
+  top:5%;
+  left: -17.5%;
+  transform: rotate(90deg);   
+}
+#hr-p{
+  border:1px solid gray;
+  width: 150%;
+  margin: 5%;
+  padding-right: 35%;
+}
+ }
+
+
+
+ 
