@@ -9,29 +9,28 @@
     <script src="https://kit.fontawesome.com/ac05ef6809.js" crossorigin="anonymous"></script>
     <title>Dhaniel Dein</title>
     <link rel="icon" href="DDLOGO.ico" type="image/png">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <nav id="barra-nav">
+
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <nav id="barra-nav" class="fixed-top transparent">
         <div id="div-nav">           
-                <img id="img-logo" src="imgs/DDLOGO.png" alt="logo">                      
+                <img id="img-logo" src="imgs/DDLOGO.png" alt="logo" >                      
         </div>
     </nav>
-    <script type="text/javascript">
-        window.addEventListener("scroll",function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky",window.scrollY>0);
 
-        })
-
-    </script>
    
-
+    
     <Section style="width: auto; height: 720px; margin-top: 50px;">
         <div id="div-img-photo">
             <div id="photo-p" style="margin-left: 33%;
             margin-right: 15%;">
-                <img id="img-photo" src="imgs/photo-dhaniel.jpeg" alt="">
+                <img id="img-photo" src="imgs/photo-dhaniel.jpeg" alt="dhaniel-dein photo" style="border-radius: 25px;">
                 <h1 style="letter-spacing: 4px;">DHANIEL DEIN</h1>
                 <hr id="hr-p">
             <p style="letter-spacing: 4px; ">
@@ -48,8 +47,8 @@
             <h1 style="letter-spacing: 4px;">MY NETWORKS</h1>
             <hr id="hr-buttons">
                         
-            <a id="a-buttons"href="https://onerpm.link/721868127853" class="hcode-button-2 button-2" target="_blank"> <i id="icon-i"  class="fa-solid fa-music"></i> LISTEN: "Outer Space"</a>
-            <a id="a-buttons"href="https://www.toneden.io/dhaniel-dein/post/sounds-of-dhaniel-dein-vol-0-1"class="hcode-button-3 button-3" target="_blank"> <i id="icon-i" class="fa-solid fa-cloud-arrow-down "></i> DOWNLOAD THE SOUNDS OF DHANIEL DEIN VOL.01</a>
+            <a id="a-buttons"href="https://onerpm.link/245347488031" class="hcode-button-2 button-2" target="_blank"> <i id="icon-i"  class="fa-solid fa-music"></i> Listen "Cyber Mind"</a>
+            <a id="a-buttons"href="https://onerpm.link/991953885404"class="hcode-button-3 button-3" target="_blank"> <i id="icon-i"  class="fa-solid fa-music"></i> Listen My First Music Album</a>
             
             <a id="a-buttons"href="https://open.spotify.com/artist/38HpVCU5dSXe6IQ5JV3Ns8"  class="hcode-button-6 button-6" target="_blank"> <i id="icon-i" class="fa-brands fa-spotify"></i>Spotify</a>
             <a id="a-buttons"href="https://soundcloud.com/dhanieldein"  class="hcode-button-5 button-5" target="_blank"> <i id="icon-i" class="fa-brands fa-soundcloud"></i>Soundcloud</a>
@@ -59,7 +58,20 @@
             <br>   
         </div>   
     </Section>
-    
+
+   
+    <script>
+        // Script para cambiar el fondo de la barra de navegación al hacer scroll
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 10) {
+              $('#barra-nav').removeClass('transparent').addClass('.colored');
+            } else {
+              $('#barra-nav').addClass('transparent').removeClass('.colored');
+            }
+          });
+        });
+      </script>
          
 </body>
 </html>
